@@ -7,7 +7,6 @@
 
 # -*- coding: utf-8 -*-
 """
-Created on Mon Mar 16 20:01:57 2026
 
 @author: ilknur
 """
@@ -103,21 +102,4 @@ print(svr_reg.predict([[6.6]]))
 print('SVR R2 değeri')
 print(r2_score(y_olcekli ,svr_reg.predict(X)))
 
-#decision tree
-from sklearn.tree import DecisionTreeRegressor
-r_dt = DecisionTreeRegressor(random_state=0)
-r_dt.fit(X,Y)
-Z = X + 0.5
-K = X - 0.4
-plt.scatter(X,Y, color='red')
-plt.plot(x,r_dt.predict(X), color='blue')
 
-plt.plot(x,r_dt.predict(Z),color='green')
-plt.plot(x,r_dt.predict(K),color='yellow')
-
-
-plt.show()
-print(r_dt.predict([[11]]))
-print(r_dt.predict([[6.6]]))
-print('decision tree R2 değeri')
-print(r2_score(Y , r_dt.predict(X)))
