@@ -60,8 +60,8 @@ plt.scatter(X,Y,color = 'red')
 plt.plot(X,lin_reg2.predict(poly_reg.fit_transform(X)), color = 'blue')
 plt.show()
 
-#tahminler
 
+#tahminler
 print(lin_reg.predict([[11]]))
 print(lin_reg.predict([[6.6]]))
 
@@ -80,9 +80,6 @@ x_olcekli = sc1.fit_transform(X)
 
 sc2=StandardScaler()
 y_olcekli = np.ravel(sc2.fit_transform(Y.reshape(-1,1)))
-
-
-
 
 
 
