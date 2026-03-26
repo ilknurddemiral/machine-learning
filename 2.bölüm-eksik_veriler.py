@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jan 27 19:56:56 2026
 
 @author: ilknur
 
@@ -34,9 +33,6 @@ print(c)
 
 
 
-
-
-
 boy = veriler[['boy']]
 print(boy)
 
@@ -55,7 +51,6 @@ print("///////")
 imputer = imputer.fit(Yas[:,1:4])
 Yas[:,1:4] = imputer.transform(Yas[:,1:4])
 print(Yas)
-
 
 
 
@@ -121,9 +116,6 @@ r2 = LinearRegression()
 r2.fit(x_train,y_train)
 
 y_pred = r2.predict(x_test)
-
-
-
 
 
 
