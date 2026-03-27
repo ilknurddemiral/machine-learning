@@ -7,7 +7,7 @@
 
 # -*- coding: utf-8 -*-
 """
-Created on Mon Mar 16 20:01:57 2026
+
 
 @author: ilknur
 """
