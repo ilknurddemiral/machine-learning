@@ -1,1 +1,4 @@
-# machine-learning
+# Python ile Makine Öğrenmesi (BTK Akademi)
+Bu depo, BTK Akademi tarafından sunulan "Python ile Makine Öğrenmesi" eğitim programı kapsamında geliştirilen projeleri, teknik dokümantasyonları ve uygulama örneklerini içermektedir. Temel veri bilimi metodolojilerinden ileri seviye modelleme tekniklerine kadar geniş bir yelpazeyi kapsayan bu çalışma; veriye dayalı çözüm üretme süreçlerini dökümante etmek amacıyla hazırlanmıştır.
+# Machine Learning with Python (BTK Academy)
+This repository contains projects, technical documentation, and application examples developed within the scope of the "Machine Learning with Python" training program provided by BTK Academy. The content covers a wide spectrum from fundamental data science methodologies to advanced modeling techniques, aiming to document the data-driven solution development processes.
