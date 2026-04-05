@@ -6,6 +6,7 @@
 """
 
 
+
 #kutuphaneler
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,6 +19,12 @@ veriler = pd.read_csv('eksikveriler.csv')
 #pd.read_csv("veriler.csv")
 
 print(veriler)
+
+# veri tablosunda boş satır varsa almasın
+veriler = pd.read_csv('veriler.csv', sep=';', skip_blank_lines=True)
+veriler = veriler.dropna(how='all')
+print(veriler.tail())
+
 
 #veri on isleme
 
@@ -38,9 +45,8 @@ ali = insan()
 print(ali.boy)
 print(ali.kosmak(90))
 
-#eksik veriler
-#sci - kit learn
 
+#eksik veriler
 from sklearn.impute import SimpleImputer
 
 imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
@@ -51,6 +57,9 @@ imputer = imputer.fit(Yas[:,1:4])
 Yas[:,1:4] = imputer.transform(Yas[:,1:4])
 print(Yas)
 
+
+
+#kategorik veriler
 ulke = veriler.iloc[:,0:1].values
 print(ulke)
 
@@ -66,6 +75,8 @@ ohe = preprocessing.OneHotEncoder()
 ulke = ohe.fit_transform(ulke).toarray()
 print(ulke)
 
+
+#verilerin birleşitrilmesi ve dataframe oluşturulması
 print(list(range(22)))
 sonuc = pd.DataFrame(data=ulke, index = range(22), columns = ['fr','tr','us'])
 print(sonuc)
@@ -86,7 +97,10 @@ s2=pd.concat([s,sonuc3], axis=1)
 print(s2)
 
 
+#birleştirme işleminden sonra bölme işlemine geçiyoruz
+#boy kilo ve ülkeye göre cinsiyet tahmini
 from sklearn.model_selection import train_test_split
 
-x_train, x_test,y_train,y_test = train_test_split(s,sonuc3,test_size=0.33, random_state=0)
+x_train, x_test, y_train, y_test =train_test_split(s, sonuc3,test_size=0.33, random_state=0)
+
 
