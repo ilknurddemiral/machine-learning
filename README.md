@@ -4,7 +4,6 @@ Bu depo, BTK Akademi tarafından sunulan "Python ile Makine Öğrenmesi" eğitim
 This repository contains projects, technical documentation, and application examples developed within the scope of the "Machine Learning with Python" training program provided by BTK Academy. The content covers a wide spectrum from fundamental data science methodologies to advanced modeling techniques, aiming to document the data-driven solution development processes.
 
 # Acknowledgments & Credits / Teşekkür ve Atıf 
---- Bu projenin Birliktelik Kural Çıkarımı (Apriori) bölümünde **Yu Mochizuki** tarafından geliştirilen [apyori](https://github.com/ymoch/apyori) kütüphanesi kullanılmıştır. Açık kaynak topluluğuna katkıları için teşekkürler.
+ Bu projenin Birliktelik Kural Çıkarımı (Apriori) bölümünde **Yu Mochizuki** tarafından geliştirilen [apyori](https://github.com/ymoch/apyori) kütüphanesi kullanılmıştır. Açık kaynak topluluğuna katkıları için teşekkürler.
 
-This project utilizes the following open-source resources:
-* **Apriori Algorithm Implementation:** The Association Rule Mining section is powered by the [apyori](https://github.com/ymoch/apyori) library developed by **Yu Mochizuki**. We are grateful for their contribution to the open-source community.
+This project utilizes the [apyori](https://github.com/ymoch/apyori) library developed by **Yu Mochizuki** for the Association Rule Mining (Apriori) section. We are grateful for their contribution to the open-source community.
