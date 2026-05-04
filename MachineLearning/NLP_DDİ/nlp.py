@@ -13,7 +13,7 @@ yorumlar = pd.read_csv('Restaurant_Reviews.csv', sep=";")
 
 import re
 import nltk
-#durma = nltk.download('stopwords')
+durma = nltk.download('stopwords')
 
 from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()#ekleri ayırma
